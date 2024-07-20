@@ -10,7 +10,7 @@ const BankCard: FC<CreditCardProps> = ({ account, userName, showBalance }) => {
         <div className='bank-card_content'>
           <div>
             <h1 className='text-16 font-semibold text-white'>
-              {account.name || userName}
+              {userName}
             </h1>
             <p className='font-ibm-plex-serif text-white font-black'>{formatAmount(account.currentBalance)}</p>
           </div>
